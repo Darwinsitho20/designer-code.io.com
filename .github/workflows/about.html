@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acerca de</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            height: 100px;
+        }
+
+        /* Navigation Menu */
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .navbar nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Redes sociales */
+        .social-media {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-media a {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .social-media a img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Sección principal */
+        .about-section {
+            max-width: 1000px;
+            margin: 100px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .about-section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 40px;
+            text-align: justify; /* Alineación justificada */
+        }
+
+        .about-section img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        /* Pie de página */
+        footer {
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Navigation -->
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Social Media con íconos circulares -->
+        <div class="social-media">
+            <a href="https://linkedin.com" target="_blank">
+                <img src="https://store-images.s-microsoft.com/image/apps.31120.9007199266245564.44dc7699-748d-4c34-ba5e-d04eb48f7960.bc4172bd-63f0-455a-9acd-5457f44e4473" alt="LinkedIn">
+            </a>
+            <a href="https://tiktok.com" target="_blank">
+                <img src="https://p16-va-tiktok.ibyteimg.com/obj/musically-maliva-obj/974c7ef68874bfdc052c4cf7856803b4.png" alt="TikTok">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png" alt="Instagram">
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección de Acerca de -->
+    <section class="about-section">
+        <h1>Acerca de Mí</h1>
+        <p>
+            ¡Hola! Soy un desarrollador web apasionado por crear soluciones elegantes y eficientes para la web.
+            Tengo experiencia en front-end y me encanta transformar ideas en código que funciona.
+            En esta página encontrarás más sobre mi experiencia, mi portafolio, y mis intereses.
+        </p>
+        <img src="https://media.licdn.com/dms/image/v2/C4E0BAQHBZ1D1XwqUkQ/company-logo_200_200/company-logo_200_200/0/1631377980209/innova_colombia_logo?e=2147483647&v=beta&t=2B9zcqjrttzzJukGjsoQkqkFX5PSAu5omK1hgiLDaLo" alt="Mi Foto">
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
