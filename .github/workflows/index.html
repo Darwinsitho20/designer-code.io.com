@@ -15,7 +15,7 @@
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
-            background-image: url('https://images.unsplash.com/photo-1607799279861-4dd421887fb3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5nZW5pZXJvJTIwaW5mb3JtYXRpY298ZW58MHx8MHx8fDA%3D'); /* Imagen de fondo que cubre toda la pantalla */
+            background-image: url('https://images.unsplash.com/photo-1607799279861-4dd421887fb3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5nZW5pZXJvJTIwaW5mb3JtYXRpY298ZW58MHx8MHx8fDA%3D');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -42,7 +42,7 @@
             border-radius: 50%;
         }
 
-        /* Header (Navigation + Social media) */
+        /* Header */
         header {
             position: relative;
             padding: 20px;
@@ -111,12 +111,12 @@
             text-align: center;
         }
 
-        /* Estilo de los cuadros semirredondeados y semitransparentes */
+        /* Cuadros semirredondeados y semitransparentes */
         .designer, .coder {
             flex: 1;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.5); /* Semitransparente */
-            border-radius: 20px; /* Bordes semirredondeados */
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
             transition: transform 0.3s ease-in-out;
             backdrop-filter: blur(10px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -125,7 +125,7 @@
         }
 
         .designer:hover, .coder:hover {
-            transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+            transform: scale(1.1);
         }
 
         .designer h1, .coder h1 {
@@ -147,10 +147,63 @@
             margin: 0 40px;
         }
 
-        /* Limitar las imágenes a no ocupar todo el espacio */
-        .designer, .coder {
-            background-size: 80%; /* Ajusta este valor para que la imagen no ocupe todo el fondo */
-            background-position: center;
+        /* Ajustes para dispositivos móviles */
+        @media (max-width: 768px) {
+            .navbar nav ul {
+                flex-direction: column;
+                gap: 10px;
+                left: 10px;
+            }
+
+            .social-media {
+                top: 60px;
+                right: 10px;
+            }
+
+            .content {
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .designer, .coder {
+                margin: 10px 0;
+                padding: 15px;
+                font-size: 16px;
+            }
+
+            .designer h1, .coder h1 {
+                font-size: 40px;
+            }
+
+            .divider {
+                display: none; /* Ocultar el divisor en pantallas pequeñas */
+            }
+
+            .logo {
+                top: 10%;
+                width: 100px;
+                height: 100px;
+            }
+
+            .logo img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .designer h1, .coder h1 {
+                font-size: 32px;
+            }
+
+            .designer p, .coder p {
+                font-size: 14px;
+            }
+
+            .navbar nav ul li a {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
